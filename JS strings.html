@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strings</title>
+</head>
+<body>
+    <h2>JavaScript Strings</h2>
+    <p id="demo"></p>
+    <script>
+        let text="John Doe";
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <p id="demo1"></p>
+    <script>
+        let carname1= "Volvo XC60";
+        let carname2= "Volvo XC60";
+        document.getElementById("demo1").innerHTML=carname1+ " " +carname2;
+    </script>
+    <h3>Length property</h3>
+    <p>The length of the string is:</p>
+    <p id="demo2"></p>
+    <script>
+        let=text="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        document.getElementById("demo2").innerHTML=text.length;
+    </script>
+    <h3>Escape sequence</h3>
+    <p id="demo3"></p>
+    <script>
+        let text1="We are the so-called \"Vikings\" from the north.";
+        document.getElementById('demo3').innerHTML=text1;
+    </script>
+    <p id="demo4"></p>
+    <script>
+        let text3="The character \\ is called backlash.";
+        document.getElementById('demo4').innerHTML=text3;
+    </script>
+    <h3>Strings as objects</h3>
+    <p id="demo5"></p>
+    <script>
+        let x="John";
+        let y=new String("John");
+        document.getElementById("demo5").innerHTML= typeof x +"<br>" + typeof y;
+    </script>
+    <p id="demo6"></p>
+    <script>
+        let a="John";
+        let b= new String("John");
+        document.getElementById("demo6").innerHTML=(a==b);
+    </script>
+    <p id="demo7"></p>
+    <script>
+    let x1 = "John";        
+    let y1 = new String("John"); 
+    document.getElementById("demo7").innerHTML = (x1===y1);
+    </script>
+</body>
+</html>
