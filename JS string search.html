@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>indexOf() method</h2>
+    <p id="demo"></p>
+    <script>
+        let text="Please locate where 'locate' occurs!";
+        let index=text.indexOf("locate");
+        document.getElementById("demo").innerHTML=index;
+    </script>
+    <h2>The search() Method</h2><p id="demo"></p>
+<p id="demo1"></p>
+    <script>
+    let text1 = "Please locate where 'locate' occurs!";
+    let index1 = text1.search("locate");
+    document.getElementById("demo1").innerHTML = index1; 
+    </script>
+    <h2>Match() method</h2>
+<p id="demo2"></p>
+
+<script>
+let text2 = "The rain in SPAIN stays mainly in the plain";
+const myArr = text2.match("ain");
+document.getElementById("demo2").innerHTML = myArr.length + " " + myArr;
+</script>
+<h2>The includes() Method</h2>
+<p id="demo3"></p>
+<script>
+    let text3 = "Hello world, welcome to the universe.";
+document.getElementById("demo3").innerHTML = text3.includes("world");
+</script>
+</body>
+</html>
