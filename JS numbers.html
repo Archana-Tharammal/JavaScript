@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Numbers</h2>
+    <p id="demo"></p>
+    <script>
+        let x=3.14;
+        let y=3;
+        document.getElementById("demo").innerHTML=x+ "<br>" +y;
+    </script>
+    <p id="demo1"></p>
+
+    <script>
+    let a = 123e5;
+    let b = 123e-5;
+    document.getElementById("demo1").innerHTML = a + "<br>" + b;
+    </script>
+    <h3>Integer precision</h3>
+    <p id="demo2"></p>
+
+<script>
+let c = 999999999999999;
+let d = 9999999999999999;
+document.getElementById("demo2").innerHTML = c + "<br>" + d;
+</script>
+<h3>Floating point precesion</h3>
+<p>Floating point arithmetic is not always 100% accurate.</p>
+
+<p id="demo3"></p>
+<script>
+    let p=0.2+0.1;
+    document.getElementById("demo3").innerHTML="0.2+0.1= "+p;
+</script>
+<h3>string concatenation</h3>
+<p id="demo4"></p>
+<script>
+    let x1 = "10";
+    let y1 = "20";
+    let z1 = x1 + y1;
+    document.getElementById("demo4").innerHTML = z1;
+    </script>
+    <p>JavaScript will try to convert strings to numbers when dividing:</p>
+
+    <p id="demo5"></p>
+    
+    <script>
+    let x2 = "100";
+    let y2 = "10";
+    let z2 = x2 / y2;   
+    document.getElementById("demo5").innerHTML = z2;
+    </script>
+    <h3>NAN-Not A Number</h3>
+    <p id="demo6"></p>
+
+<script>
+document.getElementById("demo6").innerHTML = 100 / "Apple";
+</script>
+<h3>isNAN </h3>
+<p id="demo7"></p>
+<script>
+    let g=100/"Apple";
+    document.getElementById("demo7").innerHTML = isNaN(g);
+    </script>
+    <h3>Infinity</h3>
+    <p id="demo8"></p>
+
+<script>
+let myNumber = 2; 
+let txt = "";
+while (myNumber != Infinity) {
+   myNumber = myNumber * myNumber;
+   txt = txt + myNumber + "<br>";
+}
+document.getElementById("demo8").innerHTML = txt;
+</script>
+<h3>JavaScript numbers as objects</h3>
+<p id="demo9"></p>
+<script>
+    let u=123;
+    let v= new Number(123);
+    document.getElementById("demo9").innerHTML=typeof u +"<br>" +typeof v;
+
+</script>
+</body>
+</html>
