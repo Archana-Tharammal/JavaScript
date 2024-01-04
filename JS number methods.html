@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Numbers Method</title>
+</head>
+<body>
+    <h3>toString() Method</h3>
+    <p id="demo"></p>
+    <script>
+        let x=123;
+        document.getElementById("demo").innerHTML=x.toString() +"<br>"+ (123).toString() +"<br>"+ (100+23).toString();
+    </script>
+    <h3>toExponential() Method</h3>
+    <p id="demo1"></p>
+    <script>
+        let x1 = 9.656;
+        document.getElementById("demo1").innerHTML =
+          x1.toExponential() + "<br>" + 
+          x1.toExponential(2) + "<br>" + 
+          x1.toExponential(4) + "<br>" + 
+          x1.toExponential(6);
+        </script>
+        <h3>toFixed() method</h3>
+        <p id="demo2"></p>
+        <script>
+            let a=9.656;
+            document.getElementById("demo2").innerHTML=
+            a.toFixed(0) + "<br>" +
+            a.toFixed(2) + "<br>" +
+            a.toFixed(4) + "<br>" +
+            a.toFixed(6);
+        </script>
+        <h3>toPrecision() method</h3>
+        <p id="demo3"></p>
+        <script>
+            let a1=9.656;
+            document.getElementById("demo3").innerHTML=
+            a1.toPrecision() + "<br>" +
+            a1.toPrecision(2) + "<br>" +
+            a1.toPrecision(4) + "<br>" +
+            a1.toPrecision(6);
+        </script>
+        <h3>valueOf() method</h3>
+        <p id="demo4"></p>
+        <script>
+            let s=123;
+            document.getElementById("demo4").innerHTML=
+            s.valueOf() +"<br>" +
+            (123).valueOf() +"<br>" +
+            (100+23).valueOf();
+        </script>
+        <h3>Number() method</h3>
+        <p id="demo5"></p>
+        <script>
+            document.getElementById("demo5").innerHTML=
+            Number(true) +"<br>" +
+            Number(false) +"<br>" +
+            Number("10") +"<br>" +
+            Number("   10") +"<br>" +
+            Number("10   ") +"<br>" +
+            Number("10.33") +"<br>" +
+            Number("10,33") +"<br>" +
+            Number("10 33") +"<br>" +
+            Number("John") ;
+        </script>
+        <h3>parseInt() method</h3>
+        <p id="demo6"></p>
+            <script>
+            document.getElementById("demo6").innerHTML = 
+            parseInt("-10") + "<br>" +
+            parseInt("-10.33") + "<br>" +
+            parseInt("10") + "<br>" +
+            parseInt("10.33") + "<br>" +
+            parseInt("10 6") + "<br>" +  
+            parseInt("10 years") + "<br>" +  
+            parseInt("years 10");  
+            </script>
+
+        <h3>parseFloat() method</h3>
+        <p id="demo7"></p>
+            <script>
+            document.getElementById("demo7").innerHTML = 
+            parseFloat("-10") + "<br>" +
+            parseFloat("-10.33") + "<br>" +
+            parseFloat("10") + "<br>" +
+            parseFloat("10.33") + "<br>" +
+            parseFloat("10 6") + "<br>" +  
+            parseFloat("10 years") + "<br>" +  
+            parseFloat("years 10");  
+            </script>
+        <h3>isInteger() method</h3>
+        <p id="demo8"></p>
+        <script>
+            document.getElementById("demo8").innerHTML =
+            Number.isInteger(10) + "<br>" + Number.isInteger(10.5);
+        </script>
+</body>
+</html>
