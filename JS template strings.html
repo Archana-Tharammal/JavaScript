@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Template strings</h1>
+    <h3>back-ticks(``)</h3>
+    <p id="demo"></p>
+    <script>
+        let text=`Hello world!`;
+        document.getElementById("demo").innerHTML=text;
+    </script>
+    <h3>Quotes inside string</h3>
+    <p id="demo1"></p>
+    <script>
+        let text1=`He's often called "Johnny"`;
+        document.getElementById("demo1").innerHTML=text1;
+    </script>
+    <h3>Multi line strings</h3>
+    <p id="demo2"></p>
+    <script>
+        let text2=
+                `The quick
+                brown fox
+                jumps over
+                the lazy dog`;
+        document.getElementById("demo2").innerHTML=text2;
+    </script>
+    <h3>Variable substitution</h3>
+    <p id="demo3"></p>
+    <script>
+        let firstName="John";
+        let lastName="Doe";
+        let text3=`Welcome ${firstName}, ${lastName}!`;
+        document.getElementById("demo3").innerHTML=text3;
+    </script>
+    <h3>Expression substitution</h3>
+    <p id="demo4"></p>
+    <script>
+        let price=10;
+        let VAT=0.25;
+        let total=`Total: ${(price*(1+VAT)).toFixed(2)}`;
+        document.getElementById("demo4").innerHTML=total;
+    </script>
+    <h2>HTML Templates</h2>
+    <p id="demo5"></p>
+    <script>
+        let header = "Template Strings";
+        let tags = ["template strings", "javascript", "es6"];
+        
+        let html = `<h2>${header}</h2><ul>`;
+        
+        for (const x of tags) {
+          html += `<li>${x}</li>`;
+        }
+        
+        html += `</ul>`;
+        document.getElementById("demo5").innerHTML = html;
+        </script>
+</body>
+</html>
