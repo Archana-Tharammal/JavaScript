@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Arrays</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        const cars=["Saab","Volvo","BMW"];
+        document.getElementById("demo").innerHTML=cars;
+    </script>
+
+    <p id="demo1"></p>
+    <script>
+    const cars1 = [
+      "Saab",
+      "Volvo",
+      "BMW"
+    ];
+    document.getElementById("demo1").innerHTML = cars1;
+</script>
+<p id="demo2"></p>
+<script>
+    const cars2=[];
+    cars[0]="Saab";
+    cars[1]="Volvo";
+    cars[2]="BMW";
+    document.getElementById("demo2").innerHTML=cars2;
+</script>
+<p id="demo3"></p>
+    <script>
+        const cars3= new Array("Saab","Volvo","BMW");
+        document.getElementById("demo3").innerHTML=cars3;
+    </script>
+    <h2>Bracket indexing</h2>
+    <p id="demo4"></p>
+    <script>
+        const cars4=["Saab","Volvo","BMW"];
+        document.getElementById("demo4").innerHTML=cars4[0];
+    </script>
+    <p id="demo5"></p>
+    <script>
+        const cars5=["Saab","Volvo","BMW"];
+        cars5[0]="Opel";
+        document.getElementById("demo5").innerHTML=cars5;
+    </script>
+    <p id="demo6"></p>
+    <script>
+        const person=["John","Doe",46];
+        document.getElementById("demo6").innerHTML=person[0];
+    </script>
+    <p id="demo7"></p>
+    <script>
+        const person1={firstName:"John",lastName:"Doe",age:45};
+        document.getElementById("demo7").innerHTML=person1.firstName;
+    </script>
+    <p id="demo8"></p>
+    <script>
+        var points=new Array(40,100,2);
+        document.getElementById("demo8").innerHTML=points;
+    </script>
+</body>
+</html>
