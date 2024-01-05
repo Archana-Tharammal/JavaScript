@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h3>The length property</h3>
+    <p id="demo"></p>
+    <script>
+        const fruits=["Banana","Orange","Apple","Mango"];
+        let size=fruits.length;
+        document.getElementById("demo").innerHTML=size;
+    </script>
+    <h3>The toString() method</h3>
+    <p id="demo1"></p>
+    <script>
+        const fruits1=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo1").innerHTML=fruits1.toString();
+    </script>
+    <h3>The at() method</h3>
+    <p id="demo2"></p>
+    <script>
+        const fruits2=["Banana","Orange","Apple","Mango"];
+        let fruit=fruits2.at(2);
+        document.getElementById("demo2").innerHTML=fruit;
+    </script>
+    <h3>The join() method</h3>
+    <p id="demo3"></p>
+    <script>
+        const fruit1=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo3").innerHTML=fruit1.join(" * ");
+    </script>
+    <h3>The pop() method</h3>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <script>
+        const f=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo4").innerHTML=f;
+        f.pop();
+        document.getElementById("demo5").innerHTML=f;
+    </script>
+    <h3>The push() method</h3>
+    <p id="demo6"></p>
+    <p id="demo7"></p>
+    <script>
+        const x=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo6").innerHTML=x;
+        x.push("Kiwi");
+        document.getElementById("demo7").innerHTML=x;
+    </script>
+    <h3>The shift() method</h3>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+    <script>
+        const y=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo8").innerHTML=y;
+        y.shift();
+        document.getElementById("demo9").innerHTML=y;
+    </script>
+    <h3>The unshift() method</h3>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <script>
+        const z=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo10").innerHTML=z;
+        z.unshift("Lemon");
+        document.getElementById("demo11").innerHTML=z;
+    </script>
+    <h3>The delete method</h3>
+    <p id="demo12"></p>
+    <p id="demo13"></p>
+    <script>
+        const y1=["Banana","Orange","Apple","Mango"];
+        document.getElementById("demo12").innerHTML="The first fruit is: "+y1[0];
+        delete y1[0];
+        document.getElementById("demo13").innerHTML="The first fruit is: "+y1[0];
+    </script>
+    <h3>The concat() method</h3>
+    <p id="demo14"></p>
+<script>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+document.getElementById("demo14").innerHTML = myChildren;
+</script>
+<h3>The copyWithin() property</h3>
+<p id="demos"></p>
+<script>
+const a = ["Banana", "Orange", "Apple", "Mango"];
+document.getElementById("demos").innerHTML =a.copyWithin(2,0);
+</script>
+<h3>The flat() method</h3>
+<p id="dem"></p>
+<script>
+    const myArr=[[1,2],[3,4],[5,6]];
+    const newArr=myArr.flat();
+    document.getElementById("dem").innerHTML=newArr;
+</script>
+<h3>The slice() method</h3>
+<p id="d1"></p>
+<p id="d2"></p>
+<script>
+    const b=["Banana","Apple","Orange","Mango"];
+    document.getElementById("d1").innerHTML=b;
+    b.splice(2,0,"Lemon","Kiwi");
+    document.getElementById("d2").innerHTML=b;
+</script>
+
+</body>
+</html>
