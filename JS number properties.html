@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+    <h3>EPSILON property</h3>
+    <p id="demo"></p>
+    <script>
+        let x=Number.EPSILON;
+        document.getElementById("demo").innerHTML=x;
+    </script>
+     <h3>MAX_VALUE property</h3>
+     <p id="demo1"></p>
+     <script>
+         let x1=Number.MAX_VALUE;
+         document.getElementById("demo1").innerHTML=x1;
+     </script>
+      <h3>MIN_VALUE property</h3>
+      <p id="demo3"></p>
+      <script>
+          let y1=Number.MIN_VALUE;
+          document.getElementById("demo3").innerHTML=y1;
+      </script>
+      <p>Using a Number property on a variable, or value, will return undefined:</p>
+      <p id="demo2"></p>
+      <script>
+          let y=6;
+          document.getElementById("demo2").innerHTML=y.MIN_VALUE;
+      </script>
+      <h3>MAX_SAFE_INTEGER Property</h3>
+      <p id="demo4"></p>
+      <script>
+          let y3=Number.MAX_SAFE_INTEGER;
+          document.getElementById("demo4").innerHTML=y3;
+      </script>
+      <h3>MIN_SAFE_INTEGER Property</h3>
+      <p id="demo5"></p>
+      <script>
+          let y4=Number.MIN_SAFE_INTEGER;
+          document.getElementById("demo5").innerHTML=y4;
+      </script>
+      <h3>POSITIVE_INFINITY Property</h3>
+      <p id="demo6"></p>
+      <script>
+        let x2=Number.POSITIVE_INFINITY;
+        document.getElementById("demo6").innerHTML=x2;
+      </script>
+      <h3>NEGATIVE_INFINITY Property</h3>
+      <p id="demo7"></p>
+      <script>
+        let x3=Number.NEGATIVE_INFINITY;
+        document.getElementById("demo7").innerHTML=x3;
+      </script>
+      <h3>Not a Number</h3>
+      <p  id="demo8"></p>
+      <script>
+        document.getElementById("demo8").innerHTML=Number.NaN;
+      </script>
+</body>
+</html>
