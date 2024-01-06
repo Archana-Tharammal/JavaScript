@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Arrays</h1>
+    <h3>The forEach() method</h3>
+    <p id="demo"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+        let txt="";
+        numbers.forEach(myFunc);
+        document.getElementById("demo").innerHTML=txt;
+
+        function myFunc(value,index,array){
+            txt +=value+"<br>";
+        }
+    </script>
+    <h3>The map() method</h3>
+    <p id="demo1"></p>
+    <script>
+        const numbers1=[45,4,9,16,25];
+        const numbers2=numbers1.map(myFunction);
+
+        document.getElementById("demo1").innerHTML=numbers2;
+
+        function myFunction(value,index,array){
+            return value *2;
+        }
+    </script>
+    <h3>The flatMap() method</h3>
+    <p id="dem1"></p>
+    <script>
+        const myArr=[1,23,5,6,4,8];
+        const newArr=myArr.flatMap((x)=> x*2);
+        document.getElementById("dem1").innerHTML=newArr;
+    </script>
+    <h3>The filter() method</h3>
+    <p id="dem2"></p>
+    <script>
+        const number1=[45,4,9,16,25];
+        const over18=number1.filter(myFunct);
+        document.getElementById("dem2").innerHTML=over18;
+
+        function myFunct(value,index,array){
+            return value >18;
+        }
+    </script>
+    <h3>The reduce() method</h3>
+    <p id="dem3"></p>
+    <script>
+        const num=[45,5,9,16,25];
+        let sum=num.reduce(myFunc1);
+        document.getElementById("dem3").innerHTML="The sum is " + sum;
+        function myFunc1(total, value,index,array) {
+            return total + value;
+        }
+    </script>
+    <h3>The reduceRight() method</h3>
+    <p id="dem4"></p>
+    <script>
+        const num1=[45,4,9,16,25];
+        let sum1=num1.reduceRight(myFunc2);
+        document.getElementById("dem4").innerHTML="The sum is " + sum1;
+        function myFunc2(total, value,index,array) {
+            return total + value;
+        }
+    </script>
+    <h3>The every() method</h3>
+    <p id="dem5"></p>
+    <script>
+        const num2=[45,4,9,16,25];
+        const allOver18=num2.every(myFunction1);
+        document.getElementById("dem5").innerHTML="All over 18 is " + allOver18;
+
+        function myFunction1(value,index,array){
+            return value >18;
+        }
+    </script>
+    <h3>The from() method</h3>
+    <p id="dem6"></p>
+    <script>
+        const myArr1 = Array.from("ABCDEFG");
+document.getElementById("dem6").innerHTML = myArr1;
+    </script>
+    <h3>The keys() method</h3>
+    <p id="dem7"></p>
+    <script>
+        const fruits=["Banana","Orange","Apple","Mango"];
+        const keys= fruits.keys();
+        let text ="";
+        for (let x of keys) {
+            text += x + "<br>";
+        }
+        document.getElementById("dem7").innerHTML=text;
+    </script>
+    <h3>JavaScript Const</h3>
+    <p  id="dem8"></p>
+    <script>
+        const cars=["Saab","Volvo","BMW"];
+        document.getElementById("dem8").innerHTML=cars;
+    </script>
+</body>
+</html>
