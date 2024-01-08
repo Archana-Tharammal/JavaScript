@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript Arrays</h2>
+    <h3>For In Loops</h3>
+    <p id="demo"></p>
+    <script>
+        const person ={fname:"John", lname:"Doe", age:25};
+
+        let txt ="";
+        for (let x in person){
+            txt += person[x] +" ";
+        }
+
+        document.getElementById("demo").innerHTML=txt;
+    </script>
+    
+    <p id="demo1"></p>
+    <script>
+        const numbers=[45,4,9,16,25];
+
+        let txt1="";
+        for (let x in numbers){
+            txt1+=numbers[x] +"<br>";
+        }
+        document.getElementById("demo1").innerHTML=txt1;
+    </script>
+    <h3>forEach() method</h3>
+    <p id="demo2"></p>
+    <script>
+        const number=[45,21,87,641,4,56,7];
+
+        let txt2="";
+        number.forEach(myFunction);
+        document.getElementById("demo2").innerHTML=txt2;
+
+        function myFunction(value,index, array){
+            txt2+=value +"<br>";
+        }
+    </script>
+</body>
+</html>
