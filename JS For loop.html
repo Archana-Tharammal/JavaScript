@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>JavaScript For Loop</h2>
+    <p id="demo"></p>
+    <script>
+        const cars=["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+    
+    let text="";
+    for (let i=0; i< cars.length; i++) {
+        text+= cars[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML=text;
+    </script>
+
+    <p id="demo1"></p>
+    <script>
+        const car=["BMW","Volvo","Saab","Ford","Fiat","Audi"];
+        let i=2;
+        let len=car.length;
+        let text1="";
+
+        for(; i<len;i++){
+            text1+= car[i] +"<br>";
+        }
+        document.getElementById("demo1").innerHTML=text1;
+    </script>
+    <h2>JavaScript let</h2>
+    <p id="demo2"></p>
+    <script>
+        let j=5;
+        for (let j=0; j<10; j++) {
+
+        }
+        document.getElementById("demo2").innerHTML=j;
+    </script>
+</body>
+</html>
