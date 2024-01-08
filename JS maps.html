@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Map Objects</h1>
+    <p>Creating map from an array</p>
+    <p id="demo"></p>
+    <script>
+        const fruits= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo").innerHTML=fruits.get("apples");
+    </script>
+    <h3>Using Map.set()</h3>
+    <p id="demo1"></p>
+    <script>
+        const fruit= new Map();
+        fruit.set("apples",500);
+        fruit.set("bananas",300);
+        fruit.set("oranges",200);
+        document.getElementById("demo1").innerHTML=fruit.get("apples");
+    </script>
+    <h3>Using Map.get()</h3>
+    <p id="demo2"></p>
+    <script>
+        const fruit1= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo2").innerHTML=fruit1.get("apples");
+    </script>
+    <h3>Using Map.size</h3>
+    <p id="demo3"></p>
+    <script>
+        const fruit2= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo3").innerHTML=fruit2.size;
+    </script>
+    <h3>Deleting Map elements</h3>
+    <p id="demo4"></p>
+    <script>
+        const fruits1= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        fruits1.delete("apples");
+        document.getElementById("demo4").innerHTML=fruits1.size;
+    </script>
+    <h3>Using Map.has()</h3>
+    <p id="demo5"></p>
+    <script>
+        const f= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        document.getElementById("demo5").innerHTML=f.has("apples");
+    </script>
+    <h3>Using Map.forEach()</h3>
+    <p id="dem"></p>
+    <script>
+        const a= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        let text="";
+        a.forEach(function(value, key){
+            text+=key + ' = ' + value + "<br>"
+        })
+        document.getElementById("dem").innerHTML=text;
+    </script>
+    <h3>Using Map.entries()</h3>
+    <p id="dem1"></p>
+    <script>
+        const a1= new Map([
+            ["apples",500],
+            ["bananas",300],
+            ["oranges",200]
+        ]);
+        let text1="";
+        for (const x of a1.entries()){
+            text1+= x + "<br>";
+        }
+        document.getElementById("dem1").innerHTML=text1;
+    </script>
+</body>
+</html>
