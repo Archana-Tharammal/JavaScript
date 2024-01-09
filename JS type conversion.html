@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>JavaScript Numbers</h1>
+<h2>The Number() Method</h2>
+<p id="demo"></p>
+
+<script>
+document.getElementById("demo").innerHTML =
+Number("3.14") + "<br>" +
+Number(Math.PI) + "<br>" +
+Number("    ") + "<br>" +
+Number("") + "<br>" +
+Number("99 88") + "<br>" +
+Number("John") + "<br>";
+</script>
+<h2>toString() method</h2>
+<p id="demo1"></p>
+<script>
+    let x=123;
+    document.getElementById("demo1").innerHTML=x.toString() +"<br>"+
+    (123).toString() +"<br>" +
+    (100 + 23).toString();
+</script>
+<p id="demo2"></p>
+<script>
+    let x1=false;
+    document.getElementById("demo2").innerHTML="Number : " + Number(x1) + "<br>" +
+    "String: "+String(x1) +"<br>" +
+    "Boolean: "+Boolean(x1);
+</script>
+<h2>JavaScript Type Conversions</h2>
+<p id="demo3" style="font-family:courier"></p>
+<script>
+let y = "0";
+document.getElementById("demo3").innerHTML =
+"Number : " + Number(y) + "<br>" +
+"String : " + String(y) + "<br>" +
+"Boolean: " + Boolean(y);
+</script>
+<p id="demo4" style="font-family:courier"></p>
+
+<script>
+let x2 = NaN;
+document.getElementById("demo4").innerHTML =
+"Number : " + Number(x2) + "<br>" +
+"String : " + String(x2) + "<br>" +
+"Boolean: " + Boolean(x2);
+</script>
+<p id="demo5" style="font-family:courier"></p>
+<script>
+    let x3=Infinity;
+    document.getElementById("demo5").innerHTML=
+    "Number : "+ Number(x3) +"<br>"+
+    "String : "+ String(x3) +"<br>"+
+    "Boolean : "+ Boolean(x3);
+</script>
+<p id="demo6" style="font-family:courier"></p>
+
+<script>
+let x4 = "twenty";
+document.getElementById("demo6").innerHTML =
+"Number : " + Number(x4) + "<br>" +
+"String : " + String(x4) + "<br>" +
+"Boolean: " + Boolean(x4);
+</script>
+</body>
+</html>
